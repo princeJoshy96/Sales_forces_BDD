@@ -32,14 +32,14 @@ public class loginStepDef {
 	
 	@Given("I am on the Saleforce login page")
 		public void I_am_on_the_Saleforce_login_page() {
-		driver.get("https://urchtech-dev-ed.develop.my.salesforce.com/");
+		driver.get("Url");
 		loginPage = new loginPage(driver);
 	}
 	
 	@Given("I have entered a valid Username and password")
 		public void I_have_entered_a_valid_Username_and_password() {
-		loginPage.enterUserNamel("joshy96@urchtech.com");
-		loginPage.enterPassword("Joshy1T@");
+		loginPage.enterUserNamel("input_Username");
+		loginPage.enterPassword("input_password");
 	}
 	
 	@Given("I have entered an invalid {string} and {string}")

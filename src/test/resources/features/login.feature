@@ -22,9 +22,9 @@ Feature: Login functionality for SalesforceDev
     Then I should see an error message indicated "invalid username or password"
 
     Examples: 
-      | Username                     | Password | status  |
-      | joshy96@urctech.com         | Jshy1T@ | success |
-      | princejosh96-qs1n@force.com  | Joshy1   | Fail    |
+      | Username | Password | status  |
+      | Username | Password | success |
+      | Username | Password | Fail    |
 
   @tag3
   Scenario: Navigating to forgotten password page
